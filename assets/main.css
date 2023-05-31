@@ -14,38 +14,18 @@ html, body{
     }
   }
 
-  @media only screen and (min-width: 390px) and (orientation: landscape) {
-    div.contact {
-      font-size: 54px;
-    }
-  }
-
-@media only screen and (min-width: 844px) and (orientation: portrait) {
-    div.contact {
-      font-size: 54px;
-    }
-  }  
-
-@media only screen and (min-height: 844px) {
-    div.contact {
-      font-size: 54px;
-    }
-  }  
-
-@media only screen and (min-width: 390px) {
-    div.contact {
-      font-size: 54px;
-    }
-  }  
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3),
+@media only screen and (max-width: 390px),
+    /* only screen and (min-height: 844px), */
+    only screen and (max-width: 390px) and (orientation: landscape),
+    /* only screen and (min-width: 844px) and (orientation: portrait), */
+    only screen and (-webkit-min-device-pixel-ratio: 3),
     only screen and (min--moz-device-pixel-ratio: 3),
     only screen and (-o-min-device-pixel-ratio: 3/1),
     only screen and (min-device-pixel-ratio: 3) {
-    div.contact {
-      font-size: 54px;
-    }
-  }
+        div.contact {
+          font-size: 48px;
+        }
+      }
 
 svg {
     top: 50%;
@@ -66,6 +46,7 @@ svg {
 }
 
 .logo {
+    color: red;
     transform-origin: 50% 50%;
     animation: spin 40s infinite linear;
     max-height:15rem;
@@ -92,7 +73,7 @@ svg {
     font-family: sans-serif; 
     font-weight: normal; 
     font-style: normal;
-    font-size: 18px;
+    font-size: 36px;
     letter-spacing: 0.25px;
     margin: 0 auto;
     padding: 0 0 0.5em 0.5em;
@@ -103,9 +84,9 @@ p {
 }
 
 a { text-decoration: none;
-    color: rgba(0,0,0,0.85);
+    color: rgb(0, 0, 0);
 }
 
-a.four:link {-webkit-text-stroke-width: 0.000001px; -webkit-text-stroke-color: rgb(0, 0, 0);}
-a.four:visited {-webkit-text-stroke-width: 0.000001px; -webkit-text-stroke-color: red;}
+a.four:link {color: rgb(0, 0, 0);}
+a.four:visited {color: red;}
 a.four:hover {color: red;}
