@@ -8,22 +8,16 @@ html, body{
     to {transform:rotate(360deg);}
 }
 
-/* @media only screen and (max-width: 800px) {
-    div.contact {
-      font-size: 40px;
-    }
-  } */
-
-@media only screen and (max-width: 390px),
-    /* only screen and (min-height: 844px), */
-    only screen and (max-width: 390px) and (orientation: landscape),
-    /* only screen and (min-width: 844px) and (orientation: portrait), */
+@media only screen and (min-width: 390px),
+    only screen and (min-height: 844px),
+    only screen and (min-width: 390px) and (orientation: landscape),
+    only screen and (min-width: 844px) and (orientation: portrait),
     only screen and (-webkit-min-device-pixel-ratio: 3),
     only screen and (min--moz-device-pixel-ratio: 3),
     only screen and (-o-min-device-pixel-ratio: 3/1),
     only screen and (min-device-pixel-ratio: 3) {
         div.contact {
-          font-size: 58px;
+          font-size: 36px;
         }
       }
 
