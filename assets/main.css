@@ -8,6 +8,12 @@ html, body{
     to {transform:rotate(360deg);}
 }
 
+@media only screen and (max-width: 600px) {
+    div.contact {
+      font-size: 40px;
+    }
+  }
+
 svg {
     top: 50%;
     left: 50%;
